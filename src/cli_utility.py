@@ -18,18 +18,18 @@ cli_args = cli_parser.parse_args()
 
 input_url = cli_args.url
 if not urlparse(input_url).scheme:
-    print('Ссылка введена неверно: Используйте http:// или https://')
+    print('The link is incorrect: Please use the url scheme like http:// or https://')
     exit(1)
 
 if is_bitlink(API_TOKEN, input_url):
     try:
         bitlink_clicks = get_bitlink_clicks(API_TOKEN, input_url)
-        print("Количество кликов: ", bitlink_clicks)
+        print("The total number of clicks: ", bitlink_clicks)
     except requests.exceptions.HTTPError as error:
-        print('Что-то пошло не так. Ошибка: ', error)
+        print('Something went wrong. Error: ', error)
 else:
     try:
         bitlink = get_or_create_bitlink(API_TOKEN, input_url)
-        print('Битлинк', bitlink)
+        print('Bitlink', bitlink)
     except requests.exceptions.HTTPError as error:
-        print('Что-то пошло не так. Ошибка: ', error)
+        print('Something went wrong. Error: ', error)
