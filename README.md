@@ -5,6 +5,11 @@ The Bitlinks metrics show how many times your bitlink was clicked.
 
 The CLI Utility uses Bitly Services through their API (https://dev.bitly.com/)
 
+## First steps
+1. Clone / download the repository
+2. Install the CLI utility following the steps below
+3. Read user manual. 
+
 ### How to install
 1. Generate access `token` to connect with Bitly API  
     To connect with Bitly API you have to use your own token.  
