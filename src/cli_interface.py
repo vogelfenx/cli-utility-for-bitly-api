@@ -10,7 +10,7 @@ API_TOKEN = os.environ['API_TOKEN']
 
 
 cli_parser = argparse.ArgumentParser(
-    description='CLI interface for working with the bitly link shortener service using their API'
+    description='CLI utility for working with the bitly link shortener service using their API'
 )
 cli_parser.add_argument('url', help='A long url to be shortened or bitlink to get metrics')
 cli_args = cli_parser.parse_args()
