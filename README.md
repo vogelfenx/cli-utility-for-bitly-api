@@ -38,7 +38,7 @@ The CLI Utility uses Bitly Services through their API (https://dev.bitly.com/)
 ### Usage
 Please refer to built-in user help manual, when executing the CLI Utility in your cmd console:
 ```
-> cli_bitlink.py --help  
+> bitlink_cli.py --help  
 ```
 
 ### Project Goals
