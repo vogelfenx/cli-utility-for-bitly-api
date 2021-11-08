@@ -32,7 +32,7 @@ The CLI Utility uses Bitly Services through their API (https://dev.bitly.com/)
 
     Then use `pip` (or `pip3`, if there is a conflict with Python2) to install dependencies:
     ```
-    pip install -r .venv/requirements.txt
+    pip install -r requirements.txt
     ```
 
 ### Usage
